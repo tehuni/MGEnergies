@@ -1,0 +1,100 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ML" Version="1.7.1" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.7.1" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="1.7.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+  <ItemGroup Label="MLHydrogen">
+    <None Include="MLHydrogen.consumption.cs">
+      <DependentUpon>MLHydrogen.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLHydrogen.training.cs">
+      <DependentUpon>MLHydrogen.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLPower">
+    <None Include="MLPower.consumption.cs">
+      <DependentUpon>MLPower.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLPower.training.cs">
+      <DependentUpon>MLPower.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLCO2">
+    <None Include="MLCO2.consumption.cs">
+      <DependentUpon>MLCO2.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLCO2.training.cs">
+      <DependentUpon>MLCO2.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLExergy">
+    <None Include="MLExergy.consumption.cs">
+      <DependentUpon>MLExergy.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLExergy.training.cs">
+      <DependentUpon>MLExergy.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLHHV">
+    <None Include="MLHHV.consumption.cs">
+      <DependentUpon>MLHHV.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLHHV.training.cs">
+      <DependentUpon>MLHHV.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLPCC">
+    <None Include="MLPCC.consumption.cs">
+      <DependentUpon>MLPCC.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLPCC.training.cs">
+      <DependentUpon>MLPCC.mbconfig</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="MLCO2.zip">
+      <DependentUpon>MLCO2.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MLExergy.zip">
+      <DependentUpon>MLExergy.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MLHHV.zip">
+      <DependentUpon>MLHHV.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MLHydrogen.zip">
+      <DependentUpon>MLHydrogen.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MLPCC.zip">
+      <DependentUpon>MLPCC.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MLPower.zip">
+      <DependentUpon>MLPower.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MLs\" />
+  </ItemGroup>
+</Project>

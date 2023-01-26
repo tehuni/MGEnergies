@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="MGEN.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MGEN.Views"
+             mc:Ignorable="d" d:DesignWidth="1087.332" Height="573">
+    <Grid Margin="0,0,27,10">
+
+        <Label Content="ASH" HorizontalAlignment="Left" Margin="43,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblASH" Content="%" HorizontalAlignment="Left" Margin="277,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldASH" HorizontalAlignment="Left" Height="24" Margin="128,38,0,0" VerticalAlignment="Top"
+                Width="137" Maximum="8.4" Minimum="0.2" TickFrequency="0.01" TickPlacement="BottomRight"
+                ValueChanged="sldASH_ValueChanged" FontWeight="Normal" SmallChange="0.01" Value="0.2"/>
+        <Label Content="Oxygen" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblOxygen" Content="%" HorizontalAlignment="Left" Margin="277,76,0,0" VerticalAlignment="Top" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldOxygen" HorizontalAlignment="Left" Height="24" Margin="128,76,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="46" Minimum="34" TickFrequency="0.1" TickPlacement="BottomRight"
+            ValueChanged="sldOxygen_ValueChanged" LargeChange="0.1" Value="34"/>
+        <Label Content="Carbon" HorizontalAlignment="Left" Margin="354,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblCarbon" Content="%" HorizontalAlignment="Left" Margin="592,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldCarbon" HorizontalAlignment="Left" Height="24" Margin="444,38,0,0" VerticalAlignment="Top"
+            Width="136" Maximum="51" Minimum="40" TickFrequency="0.1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldCarbon_ValueChanged" LargeChange="0.1"/>
+        <Label Content="Hydrogen" HorizontalAlignment="Left" Margin="354,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblHydrogen" Content="%" HorizontalAlignment="Left" Margin="593,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldHydrogen" HorizontalAlignment="Left" Height="24" Margin="444,76,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="6.5" Minimum="4.9" TickFrequency="0.01" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldHydrogen_ValueChanged" LargeChange="0.01"/>
+        <Label Content="Air&#xD;&#xA;mass flow" HorizontalAlignment="Left" Margin="42,172,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblAirMF" Content="  kg/hr" HorizontalAlignment="Left" Margin="268,181,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldAirMF" HorizontalAlignment="Left" Height="24" Margin="127,180,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="475" Minimum="300" TickFrequency="5" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldAirMF_ValueChanged"/>
+        <Label Content="Steam&#xD;&#xA;mass flow" HorizontalAlignment="Left" Margin="354,166,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblSteamMF" Content="  kg/hr" HorizontalAlignment="Left" Margin="592,176,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldSteamMF" HorizontalAlignment="Left" Height="24" Margin="444,174,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="1100" Minimum="500" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldSteamMF_ValueChanged"/>
+        <Label Content="Pyrolysis&#xD;&#xA;temperature" HorizontalAlignment="Left" Margin="43,216,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblPyroT" Content="  °C" HorizontalAlignment="Left" Margin="277,227,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldPyroT" HorizontalAlignment="Left" Height="24" Margin="128,225,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="650" Minimum="370" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldPyrolT_ValueChanged"/>
+        <Label Content="Gasification&#xD;&#xA;temperature" HorizontalAlignment="Left" Margin="355,216,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblGasifT" Content="  °C" HorizontalAlignment="Left" Margin="593,227,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldGasifT" HorizontalAlignment="Left" Height="24" Margin="444,225,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="950" Minimum="750" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldGasifT_ValueChanged"/>
+        <Label Content="Water&#xD;&#xA;massflow" HorizontalAlignment="Left" Margin="43,259,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblWaterMF" Content="  kg/hr" HorizontalAlignment="Left" Margin="277,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldWaterMF" HorizontalAlignment="Left" Height="24" Margin="128,0,0,0" VerticalAlignment="Center"
+            Width="137" Maximum="1200" Minimum="700" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldWaterMF_ValueChanged"/>
+        <Label Content="Ca(OH)2&#xD;&#xA;mass flow" HorizontalAlignment="Left" Margin="355,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblCaMF" Content="  kg/hr" HorizontalAlignment="Left" Margin="593,0,0,0" VerticalAlignment="Center" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldCaMF" HorizontalAlignment="Left" Height="24" Margin="444,0,0,0" VerticalAlignment="Center"
+            Width="137" Maximum="3100" Minimum="1000" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldCaMF_ValueChanged"/>
+        <Label Content="Carbonat&#xD;&#xA;temperature" HorizontalAlignment="Left" Margin="665,173,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblCarboT" Content="  °C" HorizontalAlignment="Left" Margin="899,183,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldCarboT" HorizontalAlignment="Left" Height="24" Margin="750,181,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="695" Minimum="310" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldCarboT_ValueChanged"/>
+        <Label Content="LNG&#xD;&#xA;mass flow" HorizontalAlignment="Left" Margin="661,223,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Label x:Name="lblLNGMF" Content="  kg/hr" HorizontalAlignment="Left" Margin="899,231,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldLNGMF" HorizontalAlignment="Left" Height="24" Margin="750,231,0,0" VerticalAlignment="Top"
+            Width="137" Maximum="1400" Minimum="600" TickFrequency="1" Value="2" TickPlacement="BottomRight"
+            ValueChanged="sldLNGMF_ValueChanged"/>
+        <Label Content="Sulfur" HorizontalAlignment="Left" Margin="678,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" />
+        <Label x:Name="lblSulfur" Content="%" HorizontalAlignment="Left" Margin="902,38,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+        <Slider x:Name="sldSulfur" HorizontalAlignment="Left" Height="24" Margin="750,38,0,0" VerticalAlignment="Top"
+            Width="136" Maximum="0.2" Minimum="0" TickFrequency="0.01" TickPlacement="BottomRight"
+            ValueChanged="sldSulfur_ValueChanged" LargeChange="0.01"/>
+        <Slider x:Name="sldNitrogen" HorizontalAlignment="Left" Height="24" Margin="751,76,0,0" VerticalAlignment="Top"
+            Width="136" Maximum="1.53" Minimum="0" TickFrequency="0.01" Value="0" TickPlacement="BottomRight"
+            ValueChanged="sldNitrogen_ValueChanged" LargeChange="0.01" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="92,158,0,0" VerticalAlignment="Top" Width="785"/>
+        <Button x:Name="btnPredict" Content="Predict" Margin="784,302,0,0" VerticalAlignment="Top" Width="119" Height="52" Click="btnPredict_Click" FontSize="20" BorderBrush="#FF4F4A5B" Background="#FF0F2AC1" HorizontalAlignment="Left" FontFamily="Pontano Sans" BorderThickness="1,1,1,1" Cursor="Hand" RenderTransformOrigin="0.5,0.5" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5">
+
+                    </Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="lblH2Predicted" Content="Hydrogen Produced" HorizontalAlignment="Left" Height="31" Margin="84,417,0,0" VerticalAlignment="Top" Width="250" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblWorkPredicted" Content="Power Produced" HorizontalAlignment="Left" Height="36" Margin="80,479,0,0" VerticalAlignment="Top" Width="250" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblCO2Predicted" Content="L-CO2 Produced" HorizontalAlignment="Left" Height="33" Margin="665,418,0,0" VerticalAlignment="Top" Width="268" FontWeight="Bold" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblPccPredicted" Content="PCC Produced" HorizontalAlignment="Center" Height="33" Margin="0,418,0,0" VerticalAlignment="Top" Width="259" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblExergyPredicted" Content="Exergy of Gases" HorizontalAlignment="Center" Height="33" Margin="0,480,0,0" VerticalAlignment="Top" Width="259" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblHHVPredicted" Content="HHV of Gases" HorizontalAlignment="Left" Height="33" Margin="665,482,0,0" VerticalAlignment="Top" Width="268" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Nitrogen" HorizontalAlignment="Left" Margin="679,76,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8" />
+        <Label x:Name="lblNitrogen" Content="%" HorizontalAlignment="Left" Margin="900,80,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" FontFamily="Tahoma" Foreground="#FFD1D4D8"/>
+
+
+    </Grid>
+</UserControl>

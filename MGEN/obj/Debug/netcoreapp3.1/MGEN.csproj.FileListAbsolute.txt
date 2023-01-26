@@ -1,0 +1,13 @@
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\MGEN.csproj.AssemblyReference.cache
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Styles\ButtonStyles.baml
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Styles\UIColors.baml
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Views\CustomerView.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Views\HomeView.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Views\LoginView.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\Views\MainView.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\MGEN_MarkupCompile.cache
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\MGEN_MarkupCompile.lref
+C:\Users\mostafa\source\repos\MGEN\MGEN\obj\Debug\netcoreapp3.1\CustomControls\BindablePasswordBox.g.cs
